@@ -1,0 +1,182 @@
+
+.allProductsImgs{
+  width: 50%;
+  height: 60%;
+  /* border-radius: 10%; */
+  /* padding: 10px; */
+}
+.productsDiv{
+  width: 20%;
+  min-width: 330px;
+  height: 550px;
+  border: 2px solid black ;
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #272739;
+  background-color: white;
+}
+.productsMainDiv{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+button{
+  font-size: 1.2rem;
+  background-color: white;
+  border-radius: 10px;
+}
+.selectedProductImage{
+  width: 80%;
+  min-width: 300px;
+  height: 350px;
+  object-fit: contain;
+}
+.selectedProductDetailsDiv{
+  width: 40%;
+  min-width: 300px;
+  height: auto;
+  display: inline-block;
+margin-bottom: 100px;
+}
+.selectedProdutDiv{display: flex;flex-direction: row;flex-wrap: wrap;background-color: white;justify-content: center;align-items: center;}
+
+a{
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+}
+a.hover{
+  zoom: 1;
+}
+.allProductsBody{
+  background-color:#c8c1bb;
+}
+.mensClothingBody{
+  background-color:#A4B1C0 ;
+  width: 100vw;
+ min-height: 100vh;
+}
+.womensClothingBodyDiv{
+background-color:#94859e ;
+}
+.jewleryProductsBodyDiv{
+  background-color: #a9bf8e;
+  width: 100vw;
+  min-height: 100vh;
+}
+.electronicsBodyDiv{
+  background-color: #e9ddaf;
+}
+.selectedProductBodyDiv{
+  background-color: #DBC87A;
+  width: 100vw;
+  height: 100vh;
+  min-height: auto;
+}
+
+table{
+  width: 100%;
+  box-shadow: 5px 5px black;
+}
+
+tbody tr th  {
+  width: 200px;
+}
+.sideShowImages{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation:alternate ;
+  
+}
+@keyframes alternate{
+  0%{
+    opacity: 0.1;
+    transform: scale(0.8);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.slideShowImgDiv{
+  width: 100%;
+  height: 100vh;
+}
+
+.navgationTab{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+.navLinks{
+  font-size: 1.8rem;
+  margin: 50px;
+  transition: 1.2s;
+  /* background-color: #a9bf8e; */
+}
+/* .navLinks:hover{padding: 5px;color: white;} */
+
+
+.topNavBarMainDiv{display: flex;
+background-color: #688298;
+justify-content: space-between;
+}
+.menu {
+  display: flex;
+  position: relative;
+  right: 0px;
+}
+li{list-style: none;padding: 20px;text-align: center;}
+
+.menuButton{
+  display: none;
+  position: absolute;
+  right: 0px;
+  top: 3px;
+}
+.activeButton{display: block;
+  position: absolute;
+  right: 0px;
+  top: 3px;
+}
+@media screen and (max-width : 950px){
+.menu{
+  display: none;
+}
+tr{display: flex;flex-wrap: wrap;justify-content: center;align-items: center;}
+.cartImges{width: 100px;height: 100px;object-fit: contain;}
+.menuButton{display: block;}
+.activeMenu {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+}
+.productsNavBar{background-color: #DBC87A;}
+
+.productsNavLinks{display: flex;justify-content: space-between;margin: 50px;flex-wrap: wrap;}
+.productsNavLinks a {font-size: 1.8rem;font-family: Georgia, 'Times New Roman', Times, serif ;margin: 30px;border: 3px solid black;background-color: white;
+border-radius: 10px;padding: 10px;
+}
+.cartProductsBodyDiv{background-color: #ccbaa5;height: 100vh;max-height: auto;}
+a:hover{transform: scale(1.1);z-index: 2;transition: 1.2s;}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+.removeButton{background-color: rgb(215, 37, 37);padding: 6px;color: white;}
+form fieldset div label{display: inline-block;text-align: left;width: 100px;margin: 10px;}
+fieldset{display: inline-block;margin-top: 80px;padding: 20px;border-radius: 30px ;background-color :#f3f2ed;}
+input{display: inline-block;height: 20px;margin: 10px;}
+.loginSignupNavLinks{border:2px solid black;padding:5px;border-radius:10px;background-color: rgb(255, 255, 255);color: rgb(53, 53, 197);}
+.loginAndSignupBody{background-color: #cec297;height: 100vh;}
+.loginSignupButtons{background-color: rgb(255, 115, 0);color: white;padding: 5px;}
+.socialMediaIcons{width: 50px ;padding: 40px;font-size: 2rem;}
+.socialMediaIconsMainDiv{border: 5px solid black;margin-top: 40px;background-color: #688298}
+.AfterLoginNavLink{display: flex;justify-content: space-between;background-color: #5d88ae;}
+.profileDetailsLi{padding: 5px;}
+.profileDetailsBar{position:absolute;background-color:khaki;left:10px;width:250px;padding:2px;border: 2px solid black;border-radius: 15px;}
+.totalPriceTh{padding:5px;margin: 10px;font-size: 1.5rem;}
