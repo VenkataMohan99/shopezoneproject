@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react'
+import profilePic from '../Images/profilePic.png'
 import { useSelector } from 'react-redux';
 import {  NavLink } from 'react-router-dom'
 import { userDetails } from '../App';
-
 function AfterLoginTopNavBar() {
   let [menuButton,setMenuButton]=useState(false)
   let[menuSymbole,setMenuSymbole]=useState('☰')
@@ -35,8 +35,8 @@ function AfterLoginTopNavBar() {
         }}>{menuSymbole}</button>
         {menuButton ===true ?<ul className='profileDetailsBar' >
         <li className='profileDetailsLi'><h2 style={{backgroundColor:'black',color:'white',fontFamily:'serif',fontSize:'2rem',boxShadow:'5px 5px 5px #a59a7c',borderRadius:'5px'}}>Profile Details</h2></li>
-        <li className='profileDetailsLi'><img src='https://media.istockphoto.com/id/1393750072/vector/flat-white-icon-man-for-web-design-silhouette-flat-illustration-vector-illustration-stock.jpg?s=612x612&w=0&k=20&c=s9hO4SpyvrDIfELozPpiB_WtzQV9KhoMUP9R9gVohoU='
-        alt='Profile Pic' width='80px' height='80px'
+        <li className='profileDetailsLi'><img src={profilePic}
+        alt='Profile Pic' width='100px' height='100px'
         ></img></li>
         <li className='profileDetailsLi'><h3 style={{backgroundColor:'black',color:'white',fontFamily:'sans-serif',fontSize:'1.5rem',borderRadius:'5px',padding:'2px',boxShadow:'5px 5px 5px #a59a7c'}}>Profile Name</h3></li>
         <li className='profileDetailsLi'><strong style={{color:'#fb5c05',fontFamily:'-moz-initial',fontSize:'1.6rem'}}>{state[1].data[0].fullName}</strong></li>
